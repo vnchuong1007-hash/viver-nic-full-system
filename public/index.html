@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ViVer - Learn, Think, Inspire</title>
+  <meta name="description" content="ViVer là nền tảng giáo dục công nghệ theo phong cách innovation hub, hỗ trợ học AI, công nghệ, workshop, cộng đồng và quản trị học viên.">
+  <meta name="keywords" content="ViVer, học online, AI, công nghệ, innovation hub, workshop, sinh viên">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="logo" href="#home">
+        <span class="logo-mark">V</span>
+        <span>ViVer</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="menu" id="menu">
+        <a href="#home">Trang chủ</a>
+        <a href="#courses">Khóa học</a>
+        <a href="#workshops">Workshop</a>
+        <a href="#community">Cộng đồng</a>
+        <a href="#profile">Hồ sơ</a>
+        <a href="#admin">Admin</a>
+      </nav>
+
+      <div class="nav-actions" id="navActions">
+        <button class="btn ghost" id="themeBtn">🎨 Theme</button>
+        <a href="#account" class="btn ghost">Đăng nhập</a>
+        <a href="#account" class="btn primary">Đăng ký</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">EDTECH • AI • INNOVATION HUB</p>
+          <h1>Learn, Think, Inspire cùng ViVer</h1>
+          <p class="hero-text">
+            Nền tảng học tập công nghệ giúp học sinh, sinh viên phát triển AI,
+            kỹ năng số, thuyết trình, tư duy sáng tạo và năng lực nghề nghiệp tương lai.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#courses" class="btn primary big">Khám phá khóa học</a>
+            <a href="#workshops" class="btn outline big">Tham gia workshop</a>
+          </div>
+
+          <div class="trust">
+            <div><b id="statUsers">0</b><span>Người dùng</span></div>
+            <div><b id="statCourses">0</b><span>Khóa học</span></div>
+            <div><b id="statWorkshops">0</b><span>Workshop</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="ViVer students">
+          </div>
+          <div class="floating-card card-ai">
+            <b>AI Learning</b>
+            <span>Lộ trình cá nhân hóa</span>
+          </div>
+          <div class="floating-card card-score">
+            <b>86%</b>
+            <span>Theo dõi tiến độ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section program-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">ViVer Programs</p>
+          <h2>Hệ sinh thái giáo dục đổi mới sáng tạo</h2>
+          <p>Giao diện được xây theo tinh thần innovation hub: hiện đại, công nghệ, chuyên nghiệp và dễ mở rộng.</p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card"><div class="icon">🤖</div><h3>AI & Technology</h3><p>Học AI, lập trình web, dữ liệu và kỹ năng số.</p></article>
+          <article class="program-card"><div class="icon">💡</div><h3>Innovation Mindset</h3><p>Tư duy sáng tạo, giải quyết vấn đề và khởi nghiệp.</p></article>
+          <article class="program-card"><div class="icon">🎤</div><h3>Presentation Lab</h3><p>Luyện thuyết trình, pitching và phản biện.</p></article>
+          <article class="program-card"><div class="icon">🌐</div><h3>Community Hub</h3><p>Kết nối học viên, giảng viên và mentor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="account">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Account</p>
+          <h2>Tài khoản người dùng</h2>
+          <p>Đăng ký, đăng nhập, quên mật khẩu và lưu tài khoản thật vào database JSON.</p>
+        </div>
+
+        <div id="message" class="message hidden"></div>
+
+        <div class="auth-grid">
+          <form class="panel auth-card" id="registerForm">
+            <h3>Đăng ký</h3>
+            <input name="fullname" placeholder="Họ tên" required>
+            <input name="email" type="email" placeholder="Email" required>
+            <input name="phone" placeholder="Số điện thoại">
+            <input name="password" type="password" placeholder="Mật khẩu" required>
+            <input name="confirmPassword" type="password" placeholder="Xác nhận mật khẩu" required>
+            <button class="btn primary full" type="submit">Tạo tài khoản</button>
+          </form>
+
+          <form class="panel auth-card" id="loginForm">
+            <h3>Đăng nhập</h3>
+            <input name="email" type="email" placeholder="Email" required>
+            <input name="password" type="password" placeholder="Mật khẩu" required>
+            <button class="btn primary full" type="submit">Đăng nhập</button>
+            <button class="btn outline full" type="button" onclick="showMessage('Google Login đang ở chế độ demo.')">Google Login</button>
+            <button class="btn outline full" type="button" onclick="showMessage('Facebook Login đang ở chế độ demo.')">Facebook Login</button>
+          </form>
+
+          <div class="panel auth-card">
+            <h3>Quên mật khẩu</h3>
+            <input id="forgotEmail" type="email" placeholder="Nhập email">
+            <button class="btn primary full" onclick="sendForgotOtp()">Gửi OTP</button>
+            <input id="resetOtp" placeholder="Nhập OTP">
+            <input id="newPassword" type="password" placeholder="Mật khẩu mới">
+            <button class="btn purple full" onclick="resetPassword()">Đặt lại mật khẩu</button>
+            <p id="forgotMsg" class="hint"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Profile</p>
+          <h2>Hồ sơ cá nhân</h2>
+          <p>Đăng nhập để cập nhật ảnh đại diện, thông tin cá nhân, sở thích và kỹ năng.</p>
+        </div>
+
+        <div class="panel profile-panel">
+          <div class="profile-header">
+            <img id="profileAvatar" src="https://ui-avatars.com/api/?name=ViVer&background=165DFF&color=fff" alt="avatar">
+            <div>
+              <h3 id="profileName">Chưa đăng nhập</h3>
+              <p id="profileRole">Vui lòng đăng nhập để chỉnh hồ sơ.</p>
+            </div>
+          </div>
+
+          <form id="profileForm" class="profile-grid">
+            <input name="avatar" placeholder="Ảnh đại diện URL">
+            <input name="fullname" placeholder="Họ tên">
+            <input name="phone" placeholder="Số điện thoại">
+            <input name="birthday" type="date">
+            <select name="gender"><option value="">Giới tính</option><option>Nam</option><option>Nữ</option><option>Khác</option></select>
+            <input name="interests" placeholder="Sở thích">
+            <input name="skills" placeholder="Kỹ năng">
+            <button class="btn primary" type="submit">Lưu hồ sơ</button>
+            <button class="btn danger" type="button" id="logoutBtn">Đăng xuất</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-head row">
+          <div>
+            <p class="eyebrow">Courses</p>
+            <h2>Khóa học nổi bật</h2>
+          </div>
+          <div class="filters">
+            <input id="courseSearch" placeholder="Tìm khóa học...">
+            <select id="categoryFilter">
+              <option value="">Tất cả danh mục</option>
+              <option>AI</option>
+              <option>Công nghệ</option>
+              <option>Thuyết trình</option>
+              <option>Kỹ năng mềm</option>
+              <option>Tư duy sáng tạo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="course-grid" id="coursesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="workshops">
+      <div class="container">
+        <div class="section-head light-text">
+          <p class="eyebrow">Workshops</p>
+          <h2>Workshop thực chiến</h2>
+          <p>Đăng ký workshop và hệ thống sẽ lưu dữ liệu tham gia thật vào database.</p>
+        </div>
+
+        <div class="workshop-grid" id="workshopsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="container community-grid">
+        <div>
+          <p class="eyebrow">Community</p>
+          <h2>Cộng đồng học tập ViVer</h2>
+          <p>Không gian hỏi đáp, chia sẻ tài liệu, trao đổi bài học và kết nối mentor.</p>
+          <button class="btn primary">Tham gia cộng đồng</button>
+        </div>
+        <div class="community-feed">
+          <div class="feed-item"><b>AI</b><span>Làm sao học AI cho người mới bắt đầu?</span></div>
+          <div class="feed-item"><b>Web</b><span>Roadmap học fullstack trong 8 tuần.</span></div>
+          <div class="feed-item"><b>Pitching</b><span>Mẹo thuyết trình dự án trong 3 phút.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="admin">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Admin Dashboard</p>
+          <h2>Quản trị hệ thống ViVer</h2>
+          <p>Admin có thể quản lý sinh viên, khóa học và workshop. Chỉ tài khoản admin mới thao tác được.</p>
+        </div>
+
+        <div class="dashboard">
+          <div class="dash-card"><b id="adminUsers">0</b><span>Người dùng</span></div>
+          <div class="dash-card"><b id="adminStudents">0</b><span>Sinh viên</span></div>
+          <div class="dash-card"><b id="adminCourses">0</b><span>Khóa học</span></div>
+          <div class="dash-card"><b id="adminWorkshops">0</b><span>Workshop</span></div>
+        </div>
+
+        <div class="admin-tabs">
+          <button class="tab-btn active" data-tab="usersPanel">Quản lý sinh viên</button>
+          <button class="tab-btn" data-tab="coursesPanel">Quản lý khóa học</button>
+          <button class="tab-btn" data-tab="workshopsPanel">Quản lý workshop</button>
+        </div>
+
+        <div class="panel admin-panel active" id="usersPanel">
+          <div class="panel-head">
+            <h3>Danh sách người dùng</h3>
+            <button class="btn primary" onclick="loadAdminUsers()">Tải danh sách</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>ID</th><th>Họ tên</th><th>Email</th><th>SĐT</th><th>Quyền</th><th>Trạng thái</th><th>Thao tác</th></tr></thead>
+              <tbody id="usersTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel admin-panel" id="coursesPanel">
+          <div class="panel-head">
+            <h3>Quản lý khóa học</h3>
+            <button class="btn primary" onclick="loadCourses()">Làm mới</button>
+          </div>
+
+          <form class="admin-form" id="courseForm">
+            <input type="hidden" name="id">
+            <input name="title" placeholder="Tên khóa học" required>
+            <select name="category"><option>AI</option><option>Công nghệ</option><option>Thuyết trình</option><option>Kỹ năng mềm</option><option>Tư duy sáng tạo</option></select>
+            <select name="level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+            <input name="instructor" placeholder="Giảng viên" required>
+            <input name="duration" placeholder="Thời gian học" required>
+            <input name="image" placeholder="Link hình ảnh">
+            <textarea name="description" placeholder="Mô tả khóa học"></textarea>
+            <button class="btn primary" type="submit">Lưu khóa học</button>
+            <button class="btn ghost" type="button" onclick="resetCourseForm()">Tạo mới</button>
+          </form>
+
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>ID</th><th>Khóa học</th><th>Danh mục</th><th>Cấp độ</th><th>Giảng viên</th><th>Thao tác</th></tr></thead>
+              <tbody id="adminCoursesTable"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel admin-panel" id="workshopsPanel">
+          <div class="panel-head">
+            <h3>Quản lý workshop</h3>
+            <button class="btn primary" onclick="loadWorkshops()">Làm mới</button>
+          </div>
+
+          <form class="admin-form" id="workshopForm">
+            <input type="hidden" name="id">
+            <input name="title" placeholder="Tên workshop" required>
+            <input name="speaker" placeholder="Diễn giả" required>
+            <input name="eventTime" type="datetime-local" required>
+            <input name="location" placeholder="Địa điểm" required>
+            <input name="seats" type="number" placeholder="Số chỗ" value="30">
+            <input name="image" placeholder="Link hình ảnh">
+            <textarea name="description" placeholder="Nội dung workshop"></textarea>
+            <button class="btn primary" type="submit">Lưu workshop</button>
+            <button class="btn ghost" type="button" onclick="resetWorkshopForm()">Tạo mới</button>
+          </form>
+
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>ID</th><th>Workshop</th><th>Diễn giả</th><th>Thời gian</th><th>Địa điểm</th><th>Thao tác</th></tr></thead>
+              <tbody id="adminWorkshopsTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>ViVer</h2>
+        <p>Learn • Think • Inspire</p>
+      </div>
+      <div>
+        <p>Innovation Education Platform</p>
+        <p>AI • Technology • Skills • Community</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Quản trị viên ViVer",
+      "email": "admin@viver.vn",
+      "phone": "0900000000",
+      "passwordHash": "$2a$10$.ZVUhrarfXE3riipleFqse3gF13f.kkCvfbYFiRFU4cAeYrG4Amfa",
+      "role": "admin",
+      "status": "active",
+      "avatar": "",
+      "birthday": "",
+      "gender": "",
+      "interests": "Quản trị hệ thống, đổi mới sáng tạo",
+      "skills": "Admin, EdTech, AI",
+      "resetOtp": null,
+      "createdAt": "2026-06-30T17:21:30.891Z"
+    },
+    {
+      "id": 2,
+      "fullname": "Võ Nguyên Chương",
+      "email": "student@viver.vn",
+      "phone": "010101010",
+      "passwordHash": "$2a$10$vl/gH3tJadefwuEY7q3U5OCgQL/BJg8L0knjeGZwRMVtBI64Sx82C",
+      "role": "student",
+      "status": "active",
+      "avatar": "",
+      "birthday": "",
+      "gender": "Nam",
+      "interests": "AI, Web",
+      "skills": "HTML, CSS",
+      "resetOtp": null,
+      "createdAt": "2026-06-30T17:21:31.004Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "AI Fundamentals for Students",
+      "category": "AI",
+      "level": "Beginner",
+      "instructor": "Dr. ViVer AI Lab",
+      "duration": "8 tuần",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
+      "description": "Khóa học nền tảng AI, machine learning và ứng dụng AI trong học tập.",
+      "createdAt": "2026-06-30T17:21:31.004Z"
+    },
+    {
+      "id": 2,
+      "title": "Web Development Fullstack",
+      "category": "Công nghệ",
+      "level": "Intermediate",
+      "instructor": "ViVer Tech Academy",
+      "duration": "10 tuần",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+      "description": "HTML, CSS, JavaScript, NodeJS và xây dựng website có database.",
+      "createdAt": "2026-06-30T17:21:31.004Z"
+    },
+    {
+      "id": 3,
+      "title": "Presentation & Pitching Skills",
+      "category": "Thuyết trình",
+      "level": "Advanced",
+      "instructor": "ViVer Communication Lab",
+      "duration": "6 tuần",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+      "description": "Rèn luyện thuyết trình, phản biện, pitching dự án và nói trước đám đông.",
+      "createdAt": "2026-06-30T17:21:31.004Z"
+    }
+  ],
+  "workshops": [
+    {
+      "id": 1,
+      "title": "AI for Students Bootcamp",
+      "speaker": "ViVer AI Mentor",
+      "eventTime": "2026-08-05T08:00",
+      "location": "ViVer Innovation Space",
+      "seats": 80,
+      "image": "https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&w=900&q=80",
+      "description": "Workshop ứng dụng AI trong học tập, nghiên cứu và làm dự án.",
+      "createdAt": "2026-06-30T17:21:31.004Z"
+    },
+    {
+      "id": 2,
+      "title": "Startup Innovation Lab",
+      "speaker": "ViVer Startup Mentor",
+      "eventTime": "2026-08-20T14:00",
+      "location": "Online + Offline",
+      "seats": 50,
+      "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+      "description": "Tư duy khởi nghiệp, phát triển ý tưởng và thuyết trình sản phẩm.",
+      "createdAt": "2026-06-30T17:21:31.004Z"
+    }
+  ],
+  "enrollments": [],
+  "workshopRegistrations": []
+}

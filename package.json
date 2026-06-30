@@ -1,0 +1,16 @@
+{
+  "name": "viver-nic-full-system",
+  "version": "1.0.0",
+  "description": "ViVer NIC-style full system with auth, admin, courses, workshops and persistent JSON database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
