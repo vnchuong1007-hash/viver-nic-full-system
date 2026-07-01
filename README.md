@@ -67,4 +67,5 @@ Sau khi test ổn:
 2. Deploy lên Render/Railway
 3. Đổi database JSON sang MySQL/PostgreSQL nếu chạy lâu dài
 4. Mua domain
-5. Thêm Google Search Console, sitemap.xml, robots.txt
+5. Thêm Google Search Console, sitemap.xml, robots.tx
+postgres update
