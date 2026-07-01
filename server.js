@@ -4,8 +4,17 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const path = require("path");
+const { Pool } = require('pg');
 
 const app = express();
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
+});
+console.log("Testing PostgreSQL...");
+pool.connect()
+  .then(() => console.log("PostgreSQL connected"))
+  .catch(err => console.error(err));
 const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || "viver_secret_key_change_when_deploy";
 
