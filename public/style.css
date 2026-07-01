@@ -121,8 +121,8 @@ textarea{min-height:90px;resize:vertical}
 .light-text h2,.light-text p{color:white}
 .workshop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .workshop-card{padding:30px;background:rgba(104, 76, 231, 0.349);border-color:rgba(96, 69, 194, 0.18);color:white}
-.workshop-card h3{color:white;font-size:23px}
-.workshop-card p{color:#DBEAFE;margin-bottom:20px}
+.workshop-card h3{color:#0F172A;font-size:23px}
+.workshop-card p{color:#0B2A5B;;margin-bottom:20px}
 .workshop-card span{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.14);margin-bottom:20px;font-weight:700}
 
 .community-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
@@ -200,4 +200,14 @@ body.red{
 .dash-card,
 .feed-item{
   background:var(--theme-card);
+}
+.dark-section .workshop-card,
+.dark-section .workshop-card h3,
+.dark-section .workshop-card p,
+.dark-section .workshop-card span {
+  color: #0f172a !important;
+}
+
+.dark-section .workshop-card {
+  background: #ffffff !important;
 }
