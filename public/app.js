@@ -591,8 +591,16 @@ themeBtn?.addEventListener("click", () => {
   document.body.classList.add(themes[themeIndex]);
 });
 function closeAuthModal() {
-  document.getElementById("authModal").style.display = "none";
+  const modal = document.getElementById("authModal");
+  if (modal) {
+    modal.style.display = "none";
+    sessionStorage.setItem("authClosed", "true");
+  }
 }
-window.onload = function () {
-  document.getElementById("authModal").style.display = "flex";
-};
+
+window.addEventListener("load", function () {
+  const modal = document.getElementById("authModal");
+  if (modal && sessionStorage.getItem("authClosed") !== "true") {
+    modal.style.display = "flex";
+  }
+});
