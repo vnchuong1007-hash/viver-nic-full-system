@@ -593,7 +593,7 @@ themeBtn?.addEventListener("click", () => {
 function closeAuthModal() {
   const modal = document.getElementById("authModal");
   if (modal) {
-    modal.style.display = "none";
+    modal.classList.add("is-hidden");
     sessionStorage.setItem("authClosed", "true");
   }
 }
