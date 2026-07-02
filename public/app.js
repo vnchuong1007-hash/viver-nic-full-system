@@ -590,3 +590,9 @@ themeBtn?.addEventListener("click", () => {
 
   document.body.classList.add(themes[themeIndex]);
 });
+function closeAuthModal() {
+  document.getElementById("authModal").style.display = "none";
+}
+window.onload = function () {
+  document.getElementById("authModal").style.display = "flex";
+};

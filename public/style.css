@@ -210,4 +210,43 @@ body.red{
 
 .dark-section .workshop-card {
   background: #ffffff !important;
+}#authModal{
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 99999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(0,0,0,.65) !important;
+}
+
+#authModal .container{
+  width: 100% !important;
+}
+
+.auth-popup{
+  width: min(1150px, 94%) !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  background: #fff !important;
+  border-radius: 28px !important;
+  padding: 30px !important;
+  position: relative !important;
+}
+
+.auth-overlay{
+  position: absolute !important;
+  inset: 0 !important;
+}
+
+#authModal #account{
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.close-auth{
+  position: absolute !important;
+  top: 16px !important;
+  right: 16px !important;
+  z-index: 10 !important;
 }
