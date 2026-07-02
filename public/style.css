@@ -97,8 +97,6 @@ textarea{min-height:90px;resize:vertical}
 .message{padding:16px 20px;border-radius:18px;margin-bottom:22px;background:#ECFDF5;color:#047857;font-weight:700}
 .message.error{background:#FEF2F2;color:#B91C1C}
 .hidden{display:none!important}
-
-.auth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .panel{padding:28px}
 .auth-card input,.profile-grid input,.profile-grid select,.filters input,.filters select,.admin-form input,.admin-form select,.admin-form textarea{
   width:100%;padding:15px 16px;border:1px solid #CBD5E1;border-radius:16px;outline:none;margin-bottom:13px;background:white;
@@ -225,15 +223,19 @@ body.red{
 }
 
 .auth-popup{
-  width: min(1150px, 94%) !important;
-  max-height: 90vh !important;
+  width: min(950px, 88%) !important;
+  max-height: 82vh !important;
   overflow-y: auto !important;
   background: #fff !important;
-  border-radius: 28px !important;
-  padding: 30px !important;
+  border-radius: 22px !important;
+  padding: 20px !important;
   position: relative !important;
 }
-
+.auth-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,1fr) !important;
+  gap:16px !important;
+}
 .auth-overlay{
   position: absolute !important;
   inset: 0 !important;
@@ -249,4 +251,13 @@ body.red{
   top: 16px !important;
   right: 16px !important;
   z-index: 10 !important;
+}
+.auth-card{
+  padding:18px !important;
+  border-radius:18px !important;
+}
+.auth-card input{
+  padding:12px 14px !important;
+  margin-bottom:12px !important;
+  border-radius:12px !important;
 }
