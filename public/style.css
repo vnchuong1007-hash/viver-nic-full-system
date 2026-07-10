@@ -220,7 +220,6 @@ body.red{
 #authModal.is-hidden{
   display:none !important;
 }
-
 #authModal .container{
   width: 100% !important;
 }
